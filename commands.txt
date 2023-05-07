@@ -1,0 +1,13 @@
+// Build the Docker Image for the HTML Server
+docker build -t html-server-image:v1 .
+
+// Run the Docker Container
+docker run -d -p 80:80 html-server-image:v1
+
+// Test the Port with cURL
+curl localhost:80
+
+or
+
+// run docker-compose up -d
+Check localhost:8080
